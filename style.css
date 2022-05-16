@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+
+}
+
+p{
+    font-weight: 300;
+}
+
+.hello{
+    font-size: 3em;
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+}
+.about{
+    font-size: 2.5em;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(219, 216, 216);
+    /* width: 434px; */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 38px;
+
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    
+    width: 90vw;
+    padding: 23px;
+    
+}
+
+.container
+{
+    display: flex;
+}
+
+.infoContainer{
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.devInfo{
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.buttons{
+    margin-top: 34px;
+    font-size: 16px;
+}
+.btn{
+    padding: 0.5em 0.87em;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 0.87em;
+    padding: 0.5em 1.1em;
+    margin: 12px 0;
+
+}
+.btn:hover{
+    background-color: white ;
+    color: dodgerblue;
+}
+.devPic img{
+    height: 58vh;
+    border-radius: 5%;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.cross{
+    margin-left: 174px;
+}
+/* contact Page */
+.contact-form{
+    padding: 0 34px;
+    /* padding-top: 144px; */
+    margin: 83px;
+}
+.contact-form h1{
+    padding-bottom: 12px;
+}
+
+.contact-form form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form div input{
+   border-radius: 5px;
+   margin: 6px 0 0 0;
+   padding: 3px;
+}
+
+.contact-form form{
+   margin: 0 40px;
+}
+
+#emailHelp{
+    color: midnightblue;
+    font-size: 11px;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 18px;
+    margin: 3px 0;
+
+}
+
+/* Blog Page */
+
+.blogContainer{
+    margin: 83px;
+}
+
+.blogContainer h1{
+    margin: 23px;
+}
+
+.blogItem{
+    margin: 20px ;    
+    
+}
+
+/* Intro Page */
+.intro{
+    margin: 83px;
+}
+.intro h2,p{
+    margin: 12px;
+}
+.skillContainer{
+    padding: 12px;
+}
+.skill{
+    /* width: 265px; */
+    height: 6px;
+    /* background-color: red; */
+    border: 2px solid;
+    margin-left: 10px;
+}
+.p100{
+    background-color: green;
+    width: 265px;
+}
+.p75{
+    background-color: yellowgreen;
+    width: 165px;
+}
+.p50{
+    background-color: yellow;
+    width: 125px;
+}
+.p25{
+    background-color: red;
+    width: 70px;
+}
+.skillItem{
+    display: flex;
+    align-items:center;
+}
+
+
+
+/* Media query */
+
+@media(max-width: 1615px){
+    .devInfo{
+        font-size: 6px;
+    }
+    .buttons{
+        font-size: 6px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro,.blogContainer,.contact-form{
+        margin: 8px;
+    }
+}
