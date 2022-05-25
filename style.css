@@ -207,18 +207,22 @@ p{
 .p100{
     background-color: green;
     width: 265px;
+    margin-right: 10px;
 }
 .p75{
     background-color: yellowgreen;
     width: 165px;
+    margin-right: 10px;
 }
 .p50{
     background-color: yellow;
     width: 125px;
+    margin-right: 10px;
 }
 .p25{
     background-color: red;
     width: 70px;
+    margin-right: 10px;
 }
 .skillItem{
     display: flex;
