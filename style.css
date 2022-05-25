@@ -22,6 +22,16 @@ p{
     font-weight: 300;
 }
 
+.logo{
+    text-align: center;
+    font-size: 35px;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    
+}
 .hello{
     font-size: 3em;
 }
@@ -187,6 +197,13 @@ p{
     
 }
 
+.blogItem a{
+    text-decoration: none;
+    color: white;
+}
+.blogItem a:hover{
+    color: dodgerblue;
+}
 /* Intro Page */
 .intro{
     margin: 83px;
